@@ -3,7 +3,7 @@ var router = express.Router();
 const fs = require('fs');
 
 router.get("/", (req, res, next) => {
-    fs.readFile('./land.json', (err, data) => {
+    fs.readFile('../land.json', (err, data) => {
 
         if (err) {
             console.log(err);
