@@ -16,6 +16,7 @@ const addCountry = async () => {
     console.log(data);
     if (data.success) {
         console.log("Country added!");
+        input.value = "Country added!";
     }
 };
 
