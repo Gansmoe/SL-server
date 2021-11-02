@@ -1,9 +1,12 @@
 var express = require('express');
 var router = express.Router();
 const fs = require('fs');
+const path = require('path');
+
+const filePath = path.join(__dirname, 'land.json');
 
 router.get("/", (req, res, next) => {
-    fs.readFile('../land.json', (err, data) => {
+    fs.readFile('land.json', (err, data) => {
 
         if (err) {
             console.log(err);
