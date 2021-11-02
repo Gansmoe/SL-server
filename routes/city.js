@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const fs = require('fs');
 
-app.get("/", (req, res) => {
+router.get("/", (req, res, next) => {
     fs.readFile('./city.json', (err, data) => {
 
         if (err) {
