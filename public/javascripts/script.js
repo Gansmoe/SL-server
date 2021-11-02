@@ -29,7 +29,7 @@ const addCity = async () => {
     const dataCity = await responseCity.json();
     const responseCountry = await fetch('https://hello-heroku-gansmoe.herokuapp.com/country');
     const dataCountry = await responseCountry.json();
-    const nextId = dataCity.lenght + 1;
+    const nextId = dataCity.length + 1;
     let countryId = 0;
 
     console.log(dataCity);
