@@ -88,11 +88,5 @@
     "stadname": "Jyväskylä",
     "countryid": 2,
     "population": 121782
-  },
-  {
-    "id": 1,
-    "stadname": "Borås",
-    "countryid": 1,
-    "population": 1538517
   }
 ]
