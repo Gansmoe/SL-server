@@ -3,3 +3,12 @@ GET http://localhost:3000/country
 ###
 
 GET http://localhost:3000/city
+
+###
+POST  http://localhost:3000/country
+Content-Type: application/json
+
+    {
+        "id": 4,
+        "countryname": "Ryssland"
+    }
