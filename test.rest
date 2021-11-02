@@ -5,10 +5,12 @@ GET http://localhost:3000/country
 GET http://localhost:3000/city
 
 ###
-POST  http://localhost:3000/country
+POST  http://localhost:3000/city
 Content-Type: application/json
 
-    {
-        "id": 4,
-        "countryname": "Ryssland"
-    }
+{
+    "id": 1,
+    "stadname": "Borås",
+    "countryid": 1,
+    "population": 1538517
+}

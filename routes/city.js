@@ -3,7 +3,7 @@ var router = express.Router();
 const fs = require('fs');
 const path = require('path');
 
-const filePath = path.join(__dirname, 'city.json');
+const filePath = path.join(__dirname, 'stad.json');
 
 router.post("/", (req, res) => {
     fs.readFile("stad.json", (err, data) => {
@@ -17,7 +17,7 @@ router.post("/", (req, res) => {
         const city = JSON.parse(data);
         city.push(req.body);
 
-        fs.writeFile("land.json", JSON.stringify(city, null, 2), (err) => {
+        fs.writeFile("stad.json", JSON.stringify(city, null, 2), (err) => {
             if (err) {
                 console.log(err);
             }
